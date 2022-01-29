@@ -1,6 +1,7 @@
-baseURL: http://sapensadler.github.io
+baseURL: /
 languageCode: 'en-gb'
 title: SIMON APEN-SADLER 
+publishDir: docs
 theme:
 - github.com/Mitrichius/hugo-theme-anubis
 

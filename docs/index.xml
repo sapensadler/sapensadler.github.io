@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SIMON APEN-SADLER</title>
-    <link>http://sapensadler.github.io/</link>
+    <link>/</link>
     <description>SIMON APEN-SADLER</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 22 Jan 2022 14:35:25 +0000</lastBuildDate>
     
-    <atom:link href="http://sapensadler.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://sapensadler.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Sat, 22 Jan 2022 14:51:52 +0000</pubDate>
       
-      <guid>http://sapensadler.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a Software Engineer and have experience working a variety of technical areas including Platform Infrastructure, DevOps, Software Engineering, Automation and Linux Administration.&lt;/p&gt;
 &lt;p&gt;This is my personal blog focusing on working in a SWE/DevOps/SRE like role and technology I use or find interesting.&lt;/p&gt;
 &lt;p&gt;Opinions expressed are solely my own.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>What is DevOps?</title>
-      <link>http://sapensadler.github.io/posts/devops/what-is-devops/</link>
+      <link>/posts/devops/what-is-devops/</link>
       <pubDate>Sat, 22 Jan 2022 14:35:25 +0000</pubDate>
       
-      <guid>http://sapensadler.github.io/posts/devops/what-is-devops/</guid>
+      <guid>/posts/devops/what-is-devops/</guid>
       <description>&lt;h1 id=&#34;the-goal&#34;&gt;The goal
 &lt;span&gt;
     &lt;a href=&#34;#the-goal&#34;&gt;

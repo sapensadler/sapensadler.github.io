@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://sapensadler.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2022-01-22T14:51:52+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/tags/devops/</loc>
+    <loc>/tags/devops/</loc>
     <lastmod>2022-01-22T14:35:25+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-01-22T14:35:25+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2022-01-22T14:35:25+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-01-22T14:35:25+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/posts/devops/what-is-devops/</loc>
+    <loc>/posts/devops/what-is-devops/</loc>
     <lastmod>2022-01-22T14:35:25+00:00</lastmod>
   </url><url>
-    <loc>http://sapensadler.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
