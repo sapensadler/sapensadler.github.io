@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SIMON APEN-SADLER</title>
+    <link>http://sapensadler.github.io/posts/</link>
+    <description>SIMON APEN-SADLER (Posts)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 22 Jan 2022 14:35:25 +0000</lastBuildDate>
+    
+    <atom:link href="http://sapensadler.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is DevOps?</title>
+      <link>http://sapensadler.github.io/posts/devops/what-is-devops/</link>
+      <pubDate>Sat, 22 Jan 2022 14:35:25 +0000</pubDate>
+      
+      <guid>http://sapensadler.github.io/posts/devops/what-is-devops/</guid>
+      <description>&lt;h1 id=&#34;the-goal&#34;&gt;The goal
+&lt;span&gt;
+    &lt;a href=&#34;#the-goal&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;Technology is at the heart modern civilisation. We want this technology to do 3 things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Work correctly&lt;/li&gt;
+&lt;li&gt;Work reliably&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Quickly&lt;/em&gt; adapt to changing needs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;software-development-and-operations&#34;&gt;Software Development and Operations
+&lt;span&gt;
+    &lt;a href=&#34;#software-development-and-operations&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug. Software Developers try to write software does all 3 of the above goals. But what happens to that software when the developer is finished making changes to the software? The handling of software once it&amp;rsquo;s ready is where operations come in. Operations teams are responsible for deploying the software and, configuring and maintaining the backend systems required for the software to operate correctly. It is these backend systems - servers, networks, databases etc. - that operations engineers try to ensure do all 3 of the above goals. These teams generally work separately and do not communicate effectively. This has caused many issues.&lt;/p&gt;
+&lt;p&gt;The main issue arising from this lack of communication is a long and slow feedback loop. The software is produced then handed over to operations. It is at this point the feedback cycle starts and continues until the software is deployed to production where users can give their feedback.&lt;/p&gt;
+&lt;h1 id=&#34;devops&#34;&gt;DevOps
+&lt;span&gt;
+    &lt;a href=&#34;#devops&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;DevOps is a culture with the aim of breaking down these communication barriers and getting operations and developers communicating effectively and working together closely to shorten feedback loops getting code into production faster.&lt;/p&gt;
+&lt;h2 id=&#34;reducing-feedback-loops&#34;&gt;Reducing feedback loops
+&lt;span&gt;
+    &lt;a href=&#34;#reducing-feedback-loops&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Reducing feedback loops allows developers and operations to be confident that a software deployment will go smoothly - it will work correctly and have zero/low impact on availability/reliability. This allows engineers to experiment, adapt and innovate with reduced risk of bad deployments. There are many ways to reduce feedback loops and is an art in itself.&lt;/p&gt;
+&lt;h3 id=&#34;observability&#34;&gt;Observability
+&lt;span&gt;
+    &lt;a href=&#34;#observability&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Observability is how engineers get feedback. Observability allows engineers to observe the state of a system, and allows engineers to identify if a system is working correctly and reliably. This is usually done via collecting metrics, logs and traces.&lt;/p&gt;
+&lt;h3 id=&#34;continuous-integration&#34;&gt;Continuous Integration
+&lt;span&gt;
+    &lt;a href=&#34;#continuous-integration&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Continuous integration is the practice of making small incremental changes regularly, publishing this code to source control, and running automated tests suites for each version. Getting feedback (the test results) quickly allows software engineers to identify mistakes that have been made and fix them, reducing the risk of bugs and improving correctness.&lt;/p&gt;
+&lt;h3 id=&#34;continuous-deployment&#34;&gt;Continuous Deployment
+&lt;span&gt;
+    &lt;a href=&#34;#continuous-deployment&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Continuous deployment is an extension of continuous integration. Once the tests have passed in the CI stage, the code is then automatically deployed to production. Deploying incremental changes regularly reduces risk of deployments. Good observability tooling will identify deployment issues quickly and allow for a rollback to occur. Being able to rollback within minutes instead of hours improves reliability.&lt;/p&gt;
+&lt;h2 id=&#34;devops-implementations&#34;&gt;DevOps Implementations
+&lt;span&gt;
+    &lt;a href=&#34;#devops-implementations&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;DevOps has not been standardised and hence you will get multiple definitions from different source. It can be implemented in many ways. Each company and team will implement it slightly differently.&lt;/p&gt;
+&lt;h3 id=&#34;the-devops-engineer&#34;&gt;The DevOps Engineer
+&lt;span&gt;
+    &lt;a href=&#34;#the-devops-engineer&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;It&amp;rsquo;s becoming common for a single engineer to both write code, deploy it and manage the operating environment, combining both Software Engineering and Operations Engineering into a single role.&lt;/p&gt;
+&lt;h3 id=&#34;cross-functional-teams&#34;&gt;Cross functional teams
+&lt;span&gt;
+    &lt;a href=&#34;#cross-functional-teams&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;Rather than having a two distinct teams, software and operations, have smaller teams (per service/application etc) that have both software engineering and operations expertise that work closely together and promote the devops culture.&lt;/p&gt;
+&lt;h3 id=&#34;site-reliability-engineering&#34;&gt;Site Reliability Engineering
+&lt;span&gt;
+    &lt;a href=&#34;#site-reliability-engineering&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://sre.google&#34;&gt;SRE&lt;/a&gt; is another implementation of devops that implements operations through the eyes of a software engineer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
