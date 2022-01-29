@@ -5,12 +5,15 @@ tags:
 - devops
 draft: false
 ---
-# The goal
-Technology is at the heart modern civilisation. We want this technology to do 3 things:
+# Why DevOps?
+
+We want our technology to do 3 things:
 
 1. Work correctly
 2. Work reliably
 3. *Quickly* adapt to changing needs 
+
+DevOps aims to allow engineering teams to attain these 3 goals.
 
 # Software Development and Operations 
 

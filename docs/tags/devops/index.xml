@@ -17,18 +17,19 @@
       <pubDate>Sat, 22 Jan 2022 14:35:25 +0000</pubDate>
       
       <guid>/posts/devops/what-is-devops/</guid>
-      <description>&lt;h1 id=&#34;the-goal&#34;&gt;The goal
+      <description>&lt;h1 id=&#34;why-devops&#34;&gt;Why DevOps?
 &lt;span&gt;
-    &lt;a href=&#34;#the-goal&#34;&gt;
+    &lt;a href=&#34;#why-devops&#34;&gt;
         &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;Technology is at the heart modern civilisation. We want this technology to do 3 things:&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;We want our technology to do 3 things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Work correctly&lt;/li&gt;
 &lt;li&gt;Work reliably&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Quickly&lt;/em&gt; adapt to changing needs&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;DevOps aims to allow engineering teams to attain these 3 goals.&lt;/p&gt;
 &lt;h1 id=&#34;software-development-and-operations&#34;&gt;Software Development and Operations
 &lt;span&gt;
     &lt;a href=&#34;#software-development-and-operations&#34;&gt;
