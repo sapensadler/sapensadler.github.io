@@ -11,13 +11,13 @@ We want our technology to do 3 things:
 
 1. Work correctly
 2. Work reliably
-3. *Quickly* adapt to changing needs 
+3. *Quickly* adapt to changing needs
 
 DevOps aims to allow engineering teams to attain these 3 goals.
 
-# Software Development and Operations 
+# Software Development and Operations
 
-Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug. Software Developers try to write software does all 3 of the above goals. But what happens to that software when the developer is finished making changes to the software? The handling of software once it's ready is where operations come in. Operations teams are responsible for deploying the software and, configuring and maintaining the backend systems required for the software to operate correctly. It is these backend systems - servers, networks, databases etc. - that operations engineers try to ensure do all 3 of the above goals. These teams generally work separately and do not communicate effectively. This has caused many issues. 
+Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug. Software Developers try to write software that does all 3 of the above goals. But what happens to that software when the developer is finished making changes to the software? The handling of software once it's ready is where operations come in. Operations teams are responsible for deploying the software, and configuring and maintaining the backend systems required for the software to operate correctly. It is these backend systems - servers, networks, databases etc. - that operations engineers try to ensure do all 3 of the above goals. These teams generally work separately and do not communicate effectively. This has caused many issues.
 
 The main issue arising from this lack of communication is a long and slow feedback loop. The software is produced then handed over to operations. It is at this point the feedback cycle starts and continues until the software is deployed to production where users can give their feedback.
 
@@ -27,8 +27,8 @@ DevOps is a culture with the aim of breaking down these communication barriers a
 ## Reducing feedback loops
 Reducing feedback loops allows developers and operations to be confident that a software deployment will go smoothly - it will work correctly and have zero/low impact on availability/reliability. This allows engineers to experiment, adapt and innovate with reduced risk of bad deployments. There are many ways to reduce feedback loops and is an art in itself.
 
-### Observability 
-Observability is how engineers get feedback. Observability allows engineers to observe the state of a system, and allows engineers to identify if a system is working correctly and reliably. This is usually done via collecting metrics, logs and traces.
+### Observability
+Observability is how engineers get feedback. Observability allows engineers to observe the state of a system, and allows engineers to identify if a system is working correctly and reliably. This is usually done via collecting metrics, logs, and traces.
 
 ### Continuous Integration
 

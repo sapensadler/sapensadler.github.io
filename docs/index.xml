@@ -6,10 +6,115 @@
     <description>SIMON APEN-SADLER</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 22 Jan 2022 14:35:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Feb 2022 15:00:23 +0000</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Operating Systems and Hardware Architecture</title>
+      <link>/posts/devops/operating-systems/</link>
+      <pubDate>Sat, 12 Feb 2022 15:00:23 +0000</pubDate>
+      
+      <guid>/posts/devops/operating-systems/</guid>
+      <description>&lt;p&gt;Operating systems are being abstracted away from the problem. With the popularisation of serverless and container orchestration tools, the underlying operating system has less impact as containers will run on any operating system and with serverless code, you can&amp;rsquo;t even see the operating system. However, you should still learn the basics. Serverless is great for startups, but as you scale it becomes prohibitively expensive and you will eventually have to move away. With container orchestration e.g. Kubernetes, you still have your worker nodes to manage.&lt;/p&gt;
+&lt;h1 id=&#34;hardware-architecture&#34;&gt;Hardware Architecture
+&lt;span&gt;
+    &lt;a href=&#34;#hardware-architecture&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;Operating systems abstracts away the hardware. This hardware can vary greatly in both computational power, price, and design; fundamentally, the hardware has the same building blocks and principles. The modern computer consists of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The CPU aka &amp;lsquo;the brain&amp;rsquo; which executes instructions and performs computation&lt;/li&gt;
+&lt;li&gt;Memory - short term data storage&lt;/li&gt;
+&lt;li&gt;Disk - Long term data storage&lt;/li&gt;
+&lt;li&gt;Peripherals - GPU&amp;rsquo;s, network cards etc. These extend the computers basic ability e.g. allowing it to communicate over a network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cpu-and-the-fetch-execute-cycle&#34;&gt;CPU and the Fetch Execute Cycle
+&lt;span&gt;
+    &lt;a href=&#34;#cpu-and-the-fetch-execute-cycle&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;A program consists of a list of instructions. The fetch execute cycle decodes the instruction, performs the corresponding action, then reads the next instruction:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Software (an executable program that the CPU can understand) is written and stored&lt;/li&gt;
+&lt;li&gt;The computer starts and the data is loaded from disk into RAM by EFI or BIOS&lt;/li&gt;
+&lt;li&gt;The CPU fetches the next instruction&lt;/li&gt;
+&lt;li&gt;The CPU decodes the instruction and executes the desired action&lt;/li&gt;
+&lt;li&gt;Repeat steps 3 and 4 until there are no more instructions or hardware is powered off&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;memory-registers-and-caches&#34;&gt;Memory, Registers, and Caches
+&lt;span&gt;
+    &lt;a href=&#34;#memory-registers-and-caches&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;The CPU cannot directly interact with disks, the data must first be loaded into RAM. Registers are built into the CPU and can store a small amount of data that can be accessed quickly by the CPU. Memory is a data store much larger in size but much slower. A cache is used to speed up memory access by storing frequently accessed data. The cache is built in to the CPU, and is faster than memory, but slower than registers. The caches can also have layers with layer 1 being the first, fastest and smallest cache layer, with layers 2,3 etc. gradually increasing in size but decreasing in access times.&lt;/p&gt;
+&lt;h2 id=&#34;disks-and-other-peripherals&#34;&gt;Disks and Other Peripherals
+&lt;span&gt;
+    &lt;a href=&#34;#disks-and-other-peripherals&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Disks and other peripherals such as network cards and GPU&amp;rsquo;s also form part of the hardware and communicate with the CPU in a more complex way such as memory mapped I/O or Direct memory access.&lt;/p&gt;
+&lt;h1 id=&#34;what-is-an-operating-system&#34;&gt;What is an operating system?
+&lt;span&gt;
+    &lt;a href=&#34;#what-is-an-operating-system&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;An operating system is a piece of software that abstracts away the hardware and allows the execution other software. It does this by sharing the hardware resources between the running softwares.&lt;/p&gt;
+&lt;h2 id=&#34;processes-and-threads&#34;&gt;Processes and Threads
+&lt;span&gt;
+    &lt;a href=&#34;#processes-and-threads&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;A process is a piece of running software. The operating system allocates dedicated resources to a process e.g. memory. A thread exists within a process, shares resources with the parent process, but will have it&amp;rsquo;s own instructions to execute. A thread is faster to create than a process as is shares resources and fewer new resources need to be created. Both threads and processes can be used to create concurrency.&lt;/p&gt;
+&lt;p&gt;Concurrency and parallelism are realated concepts but are not the same. Concurrency allows multiple threads to run. Parallelism allows multiple threads to run at the same time. With a single core CPU concurrency can occur by the kernel context switching between threads/processes giving each time to perform their own instructions. On multi-core threads/processes can run at the same time on each core giving us parallelism. With a single core we cannot get parallelism.&lt;/p&gt;
+&lt;h2 id=&#34;locking---mutexes-and-semaphores&#34;&gt;Locking - Mutexes and Semaphores
+&lt;span&gt;
+    &lt;a href=&#34;#locking---mutexes-and-semaphores&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Parallelism allows computation to be be sped up by doing multiple things at once, but causes its own set of problems. If two processes write to the same memory address at the same time what happens? This is where mutexes, locks and semaphores come in.&lt;/p&gt;
+&lt;p&gt;A mutex/lock is a method of protecting a resource. A single thread/process can obtain the mutex at any time. If each thread/process tries to obtain the mutex before accessing a shared resources, it enforces only a single thread can access the data at a point in time. Any other thread/process attempting to access will wait until the mutex is released. A semaphore is similar to a mutex in that it allows a number &lt;code&gt;n&lt;/code&gt; of threads/process to obtain it, but no more. If thread &lt;code&gt;n-1&lt;/code&gt; tries to obtain the semaphore it will succeed. If thread &lt;code&gt;n+1&lt;/code&gt; tries, it will block until another thread releases it.&lt;/p&gt;
+&lt;p&gt;Although mutexes and semaphores protect resources they can cause deadlocks e.g. thread 1 waiting on thread 2 waiting on thread 1.&lt;/p&gt;
+&lt;p&gt;There are also read and write locks. All readers are allowed concurrent access except when a write is occurring. When a writer must get access to the resource mutual exclusive access must occur to prevent data corruption.&lt;/p&gt;
+&lt;h2 id=&#34;disks-and-networking&#34;&gt;Disks and Networking
+&lt;span&gt;
+    &lt;a href=&#34;#disks-and-networking&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;Operating systems also deal with processing data from both disk and other computers. These are often bottlenecks in our software and understanding how these work at a low level can also help improve performance.&lt;/p&gt;
+&lt;h1 id=&#34;learn-your-operating-system-and-learn-it-well&#34;&gt;Learn your operating system and learn it well
+&lt;span&gt;
+    &lt;a href=&#34;#learn-your-operating-system-and-learn-it-well&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;An operating system is extremely complex. There are some general ideas that stay the same, such as those mentioned above. However, each OS will have its own idiosyncrasies. Learning your operating system of choice and it&amp;rsquo;s best practices will help in the long run.&lt;/p&gt;
+&lt;h2 id=&#34;aws-outage&#34;&gt;AWS outage
+&lt;span&gt;
+    &lt;a href=&#34;#aws-outage&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h2&gt;&lt;p&gt;The &lt;a href=&#34;https://aws.amazon.com/message/11201/&#34;&gt;AWS kinesis outage&lt;/a&gt; was caused by the number of running threads exceeding the OS limit. This is an interesting post mortem and shows how operating systems do still matter and are incredibly important.&lt;/p&gt;
+&lt;h1 id=&#34;summary&#34;&gt;Summary
+&lt;span&gt;
+    &lt;a href=&#34;#summary&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;Although the operating system hides the detail away from you, understanding how a computer works under the hood and what your code is doing at an instruction level is a valuable skill to have. Try some assembly and see for yourself. It can come in handy when you least expect it, particularly when profiling code to find bugs and improve performance. Most programs are not single threaded and will have an element of concurrency to them - understanding these basics will help you write safe concurrent code and allow you to debug intermittent concurrency bugs.&lt;/p&gt;
+&lt;p&gt;These fundamentals have stayed the same for decades and will last for many more. Having this fundamental understanding of how computers work will put you in good stead for debugging advanced problems and help you become a better engineer.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -48,7 +153,7 @@
         &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h1&gt;&lt;p&gt;Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug. Software Developers try to write software does all 3 of the above goals. But what happens to that software when the developer is finished making changes to the software? The handling of software once it&amp;rsquo;s ready is where operations come in. Operations teams are responsible for deploying the software and, configuring and maintaining the backend systems required for the software to operate correctly. It is these backend systems - servers, networks, databases etc. - that operations engineers try to ensure do all 3 of the above goals. These teams generally work separately and do not communicate effectively. This has caused many issues.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug. Software Developers try to write software that does all 3 of the above goals. But what happens to that software when the developer is finished making changes to the software? The handling of software once it&amp;rsquo;s ready is where operations come in. Operations teams are responsible for deploying the software, and configuring and maintaining the backend systems required for the software to operate correctly. It is these backend systems - servers, networks, databases etc. - that operations engineers try to ensure do all 3 of the above goals. These teams generally work separately and do not communicate effectively. This has caused many issues.&lt;/p&gt;
 &lt;p&gt;The main issue arising from this lack of communication is a long and slow feedback loop. The software is produced then handed over to operations. It is at this point the feedback cycle starts and continues until the software is deployed to production where users can give their feedback.&lt;/p&gt;
 &lt;h1 id=&#34;devops&#34;&gt;DevOps
 &lt;span&gt;
@@ -70,7 +175,7 @@
         &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
     &lt;/a&gt;
 &lt;/span&gt;
-&lt;/h3&gt;&lt;p&gt;Observability is how engineers get feedback. Observability allows engineers to observe the state of a system, and allows engineers to identify if a system is working correctly and reliably. This is usually done via collecting metrics, logs and traces.&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;Observability is how engineers get feedback. Observability allows engineers to observe the state of a system, and allows engineers to identify if a system is working correctly and reliably. This is usually done via collecting metrics, logs, and traces.&lt;/p&gt;
 &lt;h3 id=&#34;continuous-integration&#34;&gt;Continuous Integration
 &lt;span&gt;
     &lt;a href=&#34;#continuous-integration&#34;&gt;
