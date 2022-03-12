@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>containers on SIMON APEN-SADLER</title>
+    <link>/tags/containers/</link>
+    <description>SIMON APEN-SADLER (containers)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 12 Mar 2022 12:44:25 +0000</lastBuildDate>
+    
+    <atom:link href="/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Containers</title>
+      <link>/posts/devops/containers/</link>
+      <pubDate>Sat, 12 Mar 2022 12:44:25 +0000</pubDate>
+      
+      <guid>/posts/devops/containers/</guid>
+      <description>&lt;p&gt;A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.&lt;/p&gt;
+&lt;h1 id=&#34;benefits-and-drawbacks&#34;&gt;Benefits and Drawbacks
+&lt;span&gt;
+    &lt;a href=&#34;#benefits-and-drawbacks&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container. This is incredibly useful when running at scale.&lt;/p&gt;
+&lt;p&gt;Containers have all the dependencies included in the image you can easily run containers that rely on different library versions on the same host. However, if one of the dependencies had a security vulnerability raised against it, each container that uses it will need to be rebuilt rather than the dependency updated in a single place.&lt;/p&gt;
+&lt;h1 id=&#34;container-orchestration&#34;&gt;Container Orchestration
+&lt;span&gt;
+    &lt;a href=&#34;#container-orchestration&#34;&gt;
+        &lt;svg viewBox=&#34;0 0 28 23&#34; height=&#34;100%&#34; width=&#34;19    &#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;path d=&#34;M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34; stroke-miterlimit=&#34;10&#34; stroke-width=&#34;2&#34;/&gt;&lt;/svg&gt;
+    &lt;/a&gt;
+&lt;/span&gt;
+&lt;/h1&gt;&lt;p&gt;To start a process on a host, you would usually start it with the hosts init system - this allows the process to start up on boot should the host restart. You run start containers in a similar fashion, using cli tools such as docker, ctr, podman etc. within the init system configuration files. This becomes harder to manage as things scale up. Container orchestration is a solution to manage the scheduling containers, providing advanced features such as load balancing and autoscaling. Kubernetes is a popular container orchestrator.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

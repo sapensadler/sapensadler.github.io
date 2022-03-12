@@ -3,7 +3,6 @@
 
 <html lang="en-gb" data-theme="">
 <head>
-	<meta name="generator" content="Hugo 0.92.0" />
     
         
 <meta charset="utf-8">
@@ -11,13 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>SIMON APEN-SADLER</title>
+<title>Containers - SIMON APEN-SADLER</title>
 
-<meta name="description" content="DevOps, SRE and tech blog">
+<meta name="description" content="A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.
+Benefits and Drawbacks     Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container.">
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="SIMON APEN-SADLER" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png">
 
@@ -67,15 +66,19 @@
 
 
 
-<meta property="og:title" content="SIMON APEN-SADLER" />
-<meta property="og:description" content="DevOps, SRE and tech blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
+<meta property="og:title" content="Containers" />
+<meta property="og:description" content="A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.
+Benefits and Drawbacks     Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/devops/containers/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-12T12:44:25+00:00" />
+<meta property="article:modified_time" content="2022-03-12T12:44:25+00:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SIMON APEN-SADLER"/>
-<meta name="twitter:description" content="DevOps, SRE and tech blog"/>
+<meta name="twitter:title" content="Containers"/>
+<meta name="twitter:description" content="A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.
+Benefits and Drawbacks     Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container."/>
 
 
 
@@ -179,34 +182,36 @@
         </header>
         <main id="main" tabindex="-1"> 
             
-    <div class="homepage-content">
-        
-    </div>
+    
 
-    <div class="articles h-feed">
-        
-        
-            <article class="post-list h-feed">
-    <div class="post-header">
-        <header>
-            <h1 class="p-name post-title"><a class="u-url" href="/posts/devops/containers/">Containers</a></h1>
-        </header>
-        
-    </div>
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Containers</h1>
 
-    
-        <div class="content post-summary p-summary">
-            A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.
-Benefits and Drawbacks     Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container.
+                
+            </header>
         </div>
-    
-    
-        <div class="read-more">
-            <a class="u-url" href="/posts/devops/containers/">Read more</a>
+        <div class="content e-content">
+            <p>A container is software and dependencies packaged into a standardised format. It uses the Open Container Initiave (OCI) specifications, runtime-spec and image-spec. The image spec defines the format of the created container image. The runteime-spec defines how to execute the created image.</p>
+<h1 id="benefits-and-drawbacks">Benefits and Drawbacks
+<span>
+    <a href="#benefits-and-drawbacks">
+        <svg viewBox="0 0 28 23" height="100%" width="19    " xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h1><p>Using containers allows you to simplify your infrastructure. Configure a host with an container runtime e.g. containerd and you can run your containers - there are no other dependencies to install, they all exist within the container. This is incredibly useful when running at scale.</p>
+<p>Containers have all the dependencies included in the image you can easily run containers that rely on different library versions on the same host. However, if one of the dependencies had a security vulnerability raised against it, each container that uses it will need to be rebuilt rather than the dependency updated in a single place.</p>
+<h1 id="container-orchestration">Container Orchestration
+<span>
+    <a href="#container-orchestration">
+        <svg viewBox="0 0 28 23" height="100%" width="19    " xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h1><p>To start a process on a host, you would usually start it with the hosts init system - this allows the process to start up on boot should the host restart. You run start containers in a similar fashion, using cli tools such as docker, ctr, podman etc. within the init system configuration files. This becomes harder to manage as things scale up. Container orchestration is a solution to manage the scheduling containers, providing advanced features such as load balancing and autoscaling. Kubernetes is a popular container orchestrator.</p>
+
         </div>
-    
-    
-    
+        
 
     
 
@@ -233,112 +238,31 @@ Benefits and Drawbacks     Using containers allows you to simplify your infrastr
     </div>
 </div>
 
-</article>
+    </article>
+
+    
         
-            <article class="post-list h-feed">
-    <div class="post-header">
-        <header>
-            <h1 class="p-name post-title"><a class="u-url" href="/posts/devops/operating-systems/">Operating Systems and Hardware Architecture</a></h1>
-        </header>
-        
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            Operating systems are being abstracted away from the problem. With the popularisation of serverless and container orchestration tools, the underlying operating system has less impact as containers will run on any operating system and with serverless code, you can&rsquo;t even see the operating system. However, you should still learn the basics. Serverless is great for startups, but as you scale it becomes prohibitively expensive and you will eventually have to move away.
-        </div>
-    
-    
-        <div class="read-more">
-            <a class="u-url" href="/posts/devops/operating-systems/">Read more</a>
-        </div>
-    
-    
-    
-
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date dt-published">2022-02-12</div>
-    
-
-    <a class="post-hidden-url u-url" href="/posts/devops/operating-systems/">/posts/devops/operating-systems/</a>
-    <a href="/" class="p-name p-author post-hidden-author h-card" rel="me">Simon Apen-Sadler</a>
-
-
-    <div class="post-taxonomies">
-        
+    <div class="pagination post-pagination">
+        <div class="left pagination-item disabled">
             
-                <ul class="post-tags">
-                    
-                        
-                        <li><a href="/tags/operating-systems/">#operating-systems</a></li>
-                    
-                        
-                        <li><a href="/tags/hardware-architecture/">#hardware-architecture</a></li>
-                    
-                </ul>
-        
-    </div>
-</div>
-
-</article>
-        
-            <article class="post-list h-feed">
-    <div class="post-header">
-        <header>
-            <h1 class="p-name post-title"><a class="u-url" href="/posts/devops/what-is-devops/">What is DevOps?</a></h1>
-        </header>
-        
-    </div>
-
-    
-        <div class="content post-summary p-summary">
-            Why DevOps?     We want our technology to do 3 things:
- Work correctly Work reliably Quickly adapt to changing needs  DevOps aims to allow engineering teams to attain these 3 goals.
-Software Development and Operations     Traditionally these have been separate teams. Software developers write software, either creating new software or modifying existing software to change its behavior to meet a new need or fix a bug.
         </div>
-    
-    
-        <div class="read-more">
-            <a class="u-url" href="/posts/devops/what-is-devops/">Read more</a>
-        </div>
-    
-    
-    
-
-    
-
-
-<div class="post-info">
-    
-        <div class="post-date dt-published">2022-01-22</div>
-    
-
-    <a class="post-hidden-url u-url" href="/posts/devops/what-is-devops/">/posts/devops/what-is-devops/</a>
-    <a href="/" class="p-name p-author post-hidden-author h-card" rel="me">Simon Apen-Sadler</a>
-
-
-    <div class="post-taxonomies">
-        
+        <div class="right pagination-item ">
             
-                <ul class="post-tags">
-                    
-                        
-                        <li><a href="/tags/devops/">#devops</a></li>
-                    
-                </ul>
-        
+                <a href="/posts/devops/operating-systems/">Operating Systems and Hardware Architecture</a>
+            
+        </div>
     </div>
-</div>
 
-</article>
-        
-        
 
-    </div>
+
+
+    
+
+    
+
+    
+
+    
 
 
         </main>
