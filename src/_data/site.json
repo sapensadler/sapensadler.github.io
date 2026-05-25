@@ -1,0 +1,14 @@
+{
+  "title": "JKA WF England",
+  "url": "https://jkawfengland.org.uk",
+  "description": "JKA World Federation England - Shotokan karate",
+  "nav": [
+    {"url": "/", "text": "Home"},
+    {"url": "/about/", "text": "About"},
+    {"url": "/clubs/", "text": "Clubs"},
+    {"url": "/events/", "text": "Events"},
+    {"url": "/contact/", "text": "Contact"}
+  ],
+  "logo": "/assets/images/logo.jpg",
+  "year": 2026
+}

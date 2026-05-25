@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <p>&copy; {{ site.year }} {{ site.title }}. All rights reserved.</p>
+      <p class="affiliation">Affiliated to <a href="https://www.jka.or.jp/en/" target="_blank" rel="noopener">Japan Karate Association (JKA)</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        {% for item in site.nav %}
+          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</footer>

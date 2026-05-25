@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/">
+      {% if site.logo %}
+        <img src="{{ site.logo }}" alt="{{ site.title }} logo">
+      {% else %}
+        <img src="/assets/images/logo.svg" alt="{{ site.title }} logo">
+      {% endif %}
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        {% for item in site.nav %}
+          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
