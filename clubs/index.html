@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Clubs</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/">
+      
+        <img src="/assets/images/logo.jpg" alt="JKA WF England logo">
+      
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/clubs/">Clubs</a></li>
+        
+          <li><a href="/events/">Events</a></li>
+        
+          <li><a href="/contact/">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main class="container">
+      <h1>Club Directory</h1>
+<p>Below is the JKA WF England club list.</p>
+<div class="club-controls">
+  <input id="clubs-search" type="search" placeholder="Search clubs (name, instructor, address...)" aria-label="Search clubs">
+  <select id="clubs-field" aria-label="Search field">
+    <option value="all">All fields</option>
+    <option value="name">Name</option>
+    <option value="instructor">Instructor</option>
+    <option value="address">Address/Location</option>
+  </select>
+  <label class="checkbox"><input id="clubs-has-website" type="checkbox"> Has website</label>
+  <button id="clubs-clear" type="button">Clear</button>
+</div>
+<p id="clubs-count" class="muted" aria-live="polite"></p>
+<div id="clubs-grid" class="clubs-grid" aria-live="polite">
+  <!-- Club cards are generated client-side -->
+</div>
+<p class="muted">Data source: JKA branch registry. For the most up-to-date contact details consult the JKA registry.</p>
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <p>&copy; 2026 JKA WF England. All rights reserved.</p>
+      <p class="affiliation">Affiliated to <a href="https://www.jka.or.jp/en/" target="_blank" rel="noopener">Japan Karate Association (JKA)</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/clubs/">Clubs</a></li>
+        
+          <li><a href="/events/">Events</a></li>
+        
+          <li><a href="/contact/">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/assets/js/clubs.js" defer></script>
+    <script src="/assets/js/events.js" defer></script>
+  </body>
+</html>
