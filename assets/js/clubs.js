@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
   const container = document.getElementById('clubs-grid');
   const searchInput = document.getElementById('clubs-search');
   const fieldSelect = document.getElementById('clubs-field');
-  const hasWebsite = document.getElementById('clubs-has-website');
   const clearBtn = document.getElementById('clubs-clear');
   const countEl = document.getElementById('clubs-count');
   if(!container) return;
@@ -85,11 +84,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const debounced = debounce(filterAndRender, 250);
     if(searchInput) searchInput.addEventListener('input', debounced);
     if(fieldSelect) fieldSelect.addEventListener('change', filterAndRender);
-    if(hasWebsite) hasWebsite.addEventListener('change', filterAndRender);
     if(clearBtn) clearBtn.addEventListener('click', () => {
       if(searchInput) searchInput.value = '';
       if(fieldSelect) fieldSelect.value = 'all';
-      if(hasWebsite) hasWebsite.checked = false;
       renderClubs(clubsData);
     });
   }
@@ -97,13 +94,8 @@ document.addEventListener('DOMContentLoaded', function(){
   function filterAndRender(){
     const q = (searchInput && searchInput.value || '').trim().toLowerCase();
     const field = (fieldSelect && fieldSelect.value) || 'all';
-    const needsWebsite = hasWebsite && hasWebsite.checked;
 
     let results = clubsData.filter(club => {
-      if(needsWebsite){
-        if(!club.website) return false;
-      }
-
       if(!q) return true;
 
       if(field === 'all'){

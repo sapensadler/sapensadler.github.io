@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>About</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
   </head>
   <body>
     <header class="site-header">
-  <div class="wrap">
+  <div class="site-title">Japan Karate Association WF England</div>
+
+  <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="hamburger" aria-hidden="true"></span>
+  </button>
+
+  <div class="logo-wrap">
     <a class="logo" href="/">
       
-        <img src="/assets/images/logo.jpg" alt="JKA WF England logo">
+        <img src="/assets/images/logo.png" alt="JKA WF England logo">
       
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
+  </div>
+
+  <div class="wrap">
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <ul>
         
           <li><a href="/">Home</a></li>
@@ -25,10 +35,13 @@
         
           <li><a href="/events/">Events</a></li>
         
+          <li><a href="/international-licences/">International Licences</a></li>
+        
           <li><a href="/contact/">Contact</a></li>
         
       </ul>
     </nav>
+
   </div>
 </header>
 
@@ -51,29 +64,33 @@
     </main>
 
     <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-left">
+  <div class="footer-columns">
+    <div class="footer-col footer-left">
       <p>&copy; 2026 JKA WF England. All rights reserved.</p>
       <p class="affiliation">Affiliated to <a href="https://www.jka.or.jp/en/" target="_blank" rel="noopener">Japan Karate Association (JKA)</a></p>
     </div>
-    <nav class="footer-nav" aria-label="Footer navigation">
+
+    <div class="footer-col footer-contact">
+      <h3 style="color:var(--white);margin:0 0 .4rem">Contact</h3>
+      <p class="muted">For enquiries, please email:</p>
+      <p><a href="mailto:jkawfengland@gmail.com">jkawfengland@gmail.com</a></p>
+    </div>
+
+    <div class="footer-col footer-sitemap">
+      <h3 style="color:var(--white);margin:0 0 .4rem">Quick links</h3>
       <ul>
-        
-          <li><a href="/">Home</a></li>
-        
-          <li><a href="/about/">About</a></li>
-        
-          <li><a href="/clubs/">Clubs</a></li>
-        
-          <li><a href="/events/">Events</a></li>
-        
-          <li><a href="/contact/">Contact</a></li>
-        
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/clubs/">Clubs</a></li>
+        <li><a href="/events/">Events</a></li>
+        <li><a href="/international-licences/">International Licences</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </footer>
 
+    <script src="/assets/js/nav.js" defer></script>
     <script src="/assets/js/clubs.js" defer></script>
     <script src="/assets/js/events.js" defer></script>
   </body>
