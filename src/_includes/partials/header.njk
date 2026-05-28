@@ -1,5 +1,11 @@
 <header class="site-header">
-  <div class="wrap">
+  <div class="site-title">Japan Karate Association WF England</div>
+
+  <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="hamburger" aria-hidden="true"></span>
+  </button>
+
+  <div class="logo-wrap">
     <a class="logo" href="/">
       {% if site.logo %}
         <img src="{{ site.logo }}" alt="{{ site.title }} logo">
@@ -7,12 +13,16 @@
         <img src="/assets/images/logo.svg" alt="{{ site.title }} logo">
       {% endif %}
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
+  </div>
+
+  <div class="wrap">
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <ul>
         {% for item in site.nav %}
           <li><a href="{{ item.url }}">{{ item.text }}</a></li>
         {% endfor %}
       </ul>
     </nav>
+
   </div>
 </header>

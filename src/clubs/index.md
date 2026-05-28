@@ -15,7 +15,6 @@ Below is the JKA WF England club list.
     <option value="instructor">Instructor</option>
     <option value="address">Address/Location</option>
   </select>
-  <label class="checkbox"><input id="clubs-has-website" type="checkbox"> Has website</label>
   <button id="clubs-clear" type="button">Clear</button>
 </div>
 
@@ -25,4 +24,3 @@ Below is the JKA WF England club list.
   <!-- Club cards are generated client-side -->
 </div>
 
-<p class="muted">Data source: JKA branch registry. For the most up-to-date contact details consult the JKA registry.</p>

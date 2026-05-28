@@ -7,8 +7,9 @@
     {"url": "/about/", "text": "About"},
     {"url": "/clubs/", "text": "Clubs"},
     {"url": "/events/", "text": "Events"},
+    {"url": "/international-licences/", "text": "International Licences"},
     {"url": "/contact/", "text": "Contact"}
   ],
-  "logo": "/assets/images/logo.jpg",
+  "logo": "/assets/images/logo.png",
   "year": 2026
 }

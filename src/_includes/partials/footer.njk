@@ -1,15 +1,26 @@
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-left">
+  <div class="footer-columns">
+    <div class="footer-col footer-left">
       <p>&copy; {{ site.year }} {{ site.title }}. All rights reserved.</p>
       <p class="affiliation">Affiliated to <a href="https://www.jka.or.jp/en/" target="_blank" rel="noopener">Japan Karate Association (JKA)</a></p>
     </div>
-    <nav class="footer-nav" aria-label="Footer navigation">
+
+    <div class="footer-col footer-contact">
+      <h3 style="color:var(--white);margin:0 0 .4rem">Contact</h3>
+      <p class="muted">For enquiries, please email:</p>
+      <p><a href="mailto:jkawfengland@gmail.com">jkawfengland@gmail.com</a></p>
+    </div>
+
+    <div class="footer-col footer-sitemap">
+      <h3 style="color:var(--white);margin:0 0 .4rem">Quick links</h3>
       <ul>
-        {% for item in site.nav %}
-          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
-        {% endfor %}
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/clubs/">Clubs</a></li>
+        <li><a href="/events/">Events</a></li>
+        <li><a href="/international-licences/">International Licences</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </footer>
