@@ -10,7 +10,7 @@
 .main-nav ul{display:flex;gap:1rem;margin:0;padding:0;list-style:none}
 
 @media (max-width:900px){
-  .nav-toggle{display:inline-block;position:absolute;left:12px;top:12px}
+  .nav-toggle{display:inline-block;position:relative;}
   .main-nav{position:relative;right:0;background:var(--black);width:100%;max-width:100%;padding:1rem;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.3);transform-origin:top right;display:none;z-index:30;margin-top:8px}
   .main-nav.open{display:block}
   .main-nav ul{flex-direction:column;gap:.6rem}
@@ -20,7 +20,7 @@
 }
 
 @media (max-width:480px){
-  .nav-toggle{position:absolute;left:12px;top:12px}
+  .nav-toggle{position:relative;}
 }
 
 /* Site title (centered above menu on all sizes) */
